@@ -8,7 +8,12 @@
 
     <title>Home Page</title>
 
-    <link rel="import" href="../Capstione_Project/include.html">
+    <div id="include">
+        <script src="js/jquery-min.js"></script>
+        <script>
+            $("#include").load("include.html");
+        </script>
+    </div>
 
 </head>
 
@@ -16,51 +21,9 @@
 
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
-        <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="lni-menu"></i>
-          </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#hero-area">
-                  Trang Chủ
-                </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#feature">
-                  Khách hàng cá nhân
-                </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">
-                  Khách hàng doanh nghiệp
-                </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">
-                  Dịch vụ khách hàng
-                </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">
-                  Về bảo hiểm
-                </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolios">
-                  Liên hệ
-                </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar End -->
+        <!-- Header Start -->
+        <div id="header"></div>
+        <!-- Header End -->
 
         <!-- Hero Area Start -->
         <div id="hero-area" class="hero-area-bg">
@@ -173,7 +136,8 @@
                     <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
                         <div class="services-content">
                             <h3><a href="#">Bảo hiểm tài sản</a></h3>
-                            <p>Bảo vệ tài sản của doanh nghiệp trước những tổn thất xảy ra do các rủi ro có thể xảy ra</p>
+                            <p>Bảo vệ tài sản của doanh nghiệp trước những tổn thất xảy ra do các rủi ro có thể xảy ra
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -182,7 +146,8 @@
                     <div class="services-item wow fadeInRight" data-wow-delay="0.4s">
                         <div class="services-content">
                             <h3><a href="#">Bảo hiểm rủi ro hỗn hợp</a></h3>
-                            <p>Với mong muốn cung cấp phạm vi bảo vệ toàn diện dành cho doanh nghiệp, Bảo hiểm rủi ro hỗn hợp bao gồm nhiều chương trình bảo hiểm được cập nhật theo nhu cầu của các doanh nghiệp</p>
+                            <p>Với mong muốn cung cấp phạm vi bảo vệ toàn diện dành cho doanh nghiệp, Bảo hiểm rủi ro hỗn hợp bao gồm nhiều chương trình bảo hiểm được cập nhật theo nhu cầu của các doanh nghiệp
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -360,7 +325,8 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="submit-button">
-                                        <button class="btn btn-common" id="form-submit" type="submit">Send Message</button>
+                                        <button class="btn btn-common" id="form-submit" type="submit">Send
+                                            Message</button>
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                                         <div class="clearfix"></div>
                                     </div>
@@ -387,13 +353,13 @@
                                 <div class="contact-icon">
                                     <i class="lni-envelope"></i>
                                 </div>
-                                <p><a href="#">Email:  contact@stuck.com</a></p>
+                                <p><a href="#">Email: contact@stuck.com</a></p>
                             </div>
                             <div class="single-contact">
                                 <div class="contact-icon">
                                     <i class="lni-phone-handset"></i>
                                 </div>
-                                <p><a href="#">Phone:  +84 846 250 592</a></p>
+                                <p><a href="#">Phone: +84 846 250 592</a></p>
                             </div>
                         </div>
                     </div>
@@ -438,25 +404,6 @@
         <div class="loader" id="loader-1"></div>
     </div>
     <!-- End Preloader -->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="home_assets/js/jquery-min.js"></script>
-    <script src="home_assets/js/popper.min.js"></script>
-    <script src="home_assets/js/bootstrap.min.js"></script>
-    <script src="home_assets/js/owl.carousel.min.js"></script>
-    <script src="home_assets/js/jquery.mixitup.js"></script>
-    <script src="home_assets/js/wow.js"></script>
-    <script src="home_assets/js/jquery.nav.js"></script>
-    <script src="home_assets/js/scrolling-nav.js"></script>
-    <script src="home_assets/js/jquery.easing.min.js"></script>
-    <script src="home_assets/js/jquery.counterup.min.js"></script>
-    <script src="home_assets/js/nivo-lightbox.js"></script>
-    <script src="home_assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="home_assets/js/waypoints.min.js"></script>
-    <script src="home_assets/js/jquery.slicknav.js"></script>
-    <script src="home_assets/js/main.js"></script>
-    <script src="home_assets/js/form-validator.min.js"></script>
-    <script src="home_assets/js/contact-form-script.min.js"></script>
 
 </body>
 
